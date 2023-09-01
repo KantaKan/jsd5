@@ -31,6 +31,7 @@ function App() {
       <h1>Enter Data</h1>
       <PostContainer />
       <FeedSection />
+      <Post />
     </div>
   );
 }
@@ -47,8 +48,28 @@ const FeedSection = () => {
   );
 };
 
-const Post = () => {
+const Post = (postdata) => {
+  const {author,avatar,time,content,image} = postdata
   return (
+    <div class="post">
+        <div class="post-header">
+          <img
+            class="post-avatar"
+            src={avatar}
+            alt="User 3"
+          />
+          <div>
+            <div class="post-author">{author}</div>
+            <div class="post-time">{time}</div>
+          </div>
+        </div>
+        <div class="post-content">{content}</div>
+        <img
+          class="post-image"
+          src={image}
+          alt="Post 3"
+        />
+      </div>
 
   )
 }

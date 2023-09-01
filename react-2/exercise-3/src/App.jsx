@@ -3,32 +3,37 @@ import "./App.css";
 
 function App() {
   const { get, remove } = usePost();
-
+  const data = get();
+  console.log(data);
+  
   return (
     <div id="app">
       <h1>Enter Data</h1>
-      <PostContainer />
-      <FeedSection />
+      <button onClick={() => remove("id-002")}>delete002</button>
+      {/* <PostContainer />
+      <FeedSection /> */}
+      
     </div>
   );
-}
-
-const PostContainer = () => {
-  return (
-    
-  );
 };
 
-const FeedSection = () => {
-  return (
-    
-  );
-};
+// function PostContainer() {
+//   return (
 
-const Post = () => {
-  return (
+
+//   );
+// }
+
+// const FeedSection = () => {
+//   return (
     
-  );
-};
+//   );
+// };
+
+// const Post = () => {
+//   return (
+    
+//   );
+// };
 
 export default App;

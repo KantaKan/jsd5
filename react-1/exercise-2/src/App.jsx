@@ -5,6 +5,7 @@ function App() {
     <div id="app">
       <Header />
       <Content />
+      
       <Footer />
     </div>
   );
@@ -12,29 +13,39 @@ function App() {
 
 function Header() {
   return (
-    // Code for Header
-    // <Header />
+    <header>
+        <span>Turn on / off</span>
+        <p>Current Temperature: XXX</p>
+      </header>
   );
 }
 
 function Content() {
   return (
-    // Code for Content
-    // <Content />
+    <main>
+        <div id="temperature">
+          <span>temperature Oc</span>
+        </div>
+      </main>
   );
 }
 
-function Temperature() {
-  return (
-    // Code for Temperature
-    // <Temperature />
-  );
-}
+// function Temperature(){
+//   return (  
+//     <main>
+//         <div id="temperature">
+//           <span>{ temperature } Oc</span>
+//         </div>
+//       </main>
+//     );
+// }
 
 function Footer() {
   return (
-    // Code for Footer
-    // <Footer />
+    <footer>
+        <button>Up</button>
+        <button>Down</button>
+      </footer>
   );
 }
 
